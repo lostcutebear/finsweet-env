@@ -49,6 +49,10 @@ input {
   border-radius: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 article,
 aside,
 details,
@@ -281,7 +285,84 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
+/* Font and its weights */
+/* Font-sizes */
+/* Colors */
+/* Paragraphs */
+.p {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #525560;
+}
+
+.p-small {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #525560;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 16px 32px;
+  font-weight: 500;
+  line-height: 18.75px;
+  background: #70C174;
+  color: #fff;
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  padding: 16px 32px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #1D2130;
+  background: #FFFFFF;
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+}
+
+.btn-navbar {
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 18.75px;
+  background: #1D2130;
+  border-radius: 4px;
+}
+
+/* Active Link */
+.active {
+  color: #0b0706 !important;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+.header__container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-wrapper {
+  display: flex;
+  gap: 40.5px;
+}
+.header__nav ul {
+  display: flex;
+  gap: 40px;
+}
+.header__nav ul li a {
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #525560;
 }/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import "./reset";
 @import "./normalize";
+/* Font and its weights */
 
 $roboto: 'Roboto', sans-serif;
 $fw400: 400;
 $fw500: 500;
 $fw700: 700;
 
+/* Font-sizes */
+
+$homeheading: 64px;
+$heading1: 56px;
+$heading2: 48px;
+$heading3: 28px;
+$heading4: 20px;
+$heading5: 14px;
+$heading6: 12px;
+
+/* Colors */ 
+
+$primary: #70C174;
+$secondary: #BEF3C0;
+$tertiary: #EFF7F2;
+$black: #0b0706;
+$primary-text: #1D2130;
+$secondary-text: #525560;
+$off-white: #EBF0F9;
+$border: #E5E5E5;
+
+/* Paragraphs */ 
+
+.p {
+    font-size: 16px;
+    line-height: 25.6px;
+    color: $secondary-text;
+}
+
+.p-small {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: $secondary-text;
+}
+
+/* Buttons */ 
+
+.btn-primary {
+    padding: 16px 32px;
+    font-weight: $fw500;
+    line-height: 18.75px;
+    background: #70C174;
+    color: #fff;
+    backdrop-filter: blur(80px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+}
+
+.btn-secondary {
+    padding: 16px 32px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: $primary-text;
+    background: #FFFFFF;
+    backdrop-filter: blur(80px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+}
+
+.btn-navbar {
+    padding: 12px 32px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 18.75px;
+    background: #1D2130;
+    border-radius: 4px;
+}
+
+/* Active Link */ 
+
+.active {
+    color: $black!important;
+}
+
 body { 
     font-family: $roboto;
     font-weight: $fw400;
+}
+
+.header {
+    &__container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav-wrapper {
+        display: flex;
+        gap: 40.5px;
+    }
+
+    &__nav {
+        & ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        & ul li a {
+            font-weight: $fw500;
+            line-height: 18.75px;
+            color: $secondary-text;
+        }
+    }
 }
