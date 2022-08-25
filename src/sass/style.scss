@@ -188,3 +188,116 @@ body {
     }
 }
 
+.text-line { 
+    width: 72px;
+    border-top: 2px solid #1D2130;
+}
+
+.title-line {
+    width: 1094px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.about {
+    margin-bottom: 64px;
+    &__wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    
+    &__top-row {
+        margin-bottom: 64px;
+        display: flex;
+        align-items: center;
+        gap: 96px;
+    }
+
+    &__text {
+        & p:nth-child(2) {
+            text-transform: uppercase;
+            font-weight: $fw700;
+            line-height: 18.75px;
+            letter-spacing: 2px;
+            color: $primary-text;
+        }
+
+        & h2 {
+            width: 607px;
+            margin-bottom: 32px;
+            font-size: $heading2;
+            line-height: 57.6px;
+            font-weight: $fw700;
+            color: $primary-text;
+        }
+
+        & p:nth-child(3) {
+            width: 608px;
+            margin-bottom: 48px;
+            line-height: 25.6px;
+            color: $secondary-text;
+        }
+    }
+
+    &__title-wrapper {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    &__video {
+        position: relative;
+        & img {
+            border-radius: 12px;
+        }
+
+        & button {
+            cursor: pointer;
+            position: absolute;
+            background: #FFFFFF;
+            backdrop-filter: blur(80px);
+            border-radius: 50%;
+            border: none;
+            width: 64px;
+            height: 64px;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            & img {
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 0;
+            }
+        }
+    }
+    
+
+    &__bottom-row {
+        & p {
+            font-weight: 500;
+            line-height: 19px;
+            /* identical to box height */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            /* Primary text */
+            color: #1D2130;
+        }
+    }
+
+    &__row-title-wrapper {
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
