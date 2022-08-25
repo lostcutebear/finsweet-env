@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import "./reset";
-@import "./normalize";
+// @import "./normalize";
 /* Font and its weights */
 
 $roboto: 'Roboto', sans-serif;
@@ -82,12 +82,21 @@ $border: #E5E5E5;
     color: $black!important;
 }
 
+/* Line */ 
+
+.line {
+    width: 861px;
+    border-top: 1px solid #E5E5E5;
+    backdrop-filter: blur(30px);
+}
+
 body { 
     font-family: $roboto;
     font-weight: $fw400;
 }
 
 .header {
+    padding-bottom: 96px;
     &__container {
         max-width: 1500px;
         margin: 0 auto;
@@ -114,4 +123,68 @@ body {
             color: $secondary-text;
         }
     }
+
+    &__background {
+        background: url(../img/background/BG\ Image.jpg) center / cover no-repeat fixed;
+        height: 735px;
+        position: relative;
+    }
+
+    &__background-content {
+        position: absolute;
+        top: 128px;
+        left: 110px;
+    }
+
+    &__background-text {
+        padding-bottom: 192px;
+        & h1 {
+            margin-bottom: 48px;
+            width: 640px;
+            font-size: $homeheading;
+            font-weight: $fw700;
+            line-height: 76.8px;
+            color: #fff;
+        }
+    }
+
+    &__background-buttons {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+
+        & button {
+            cursor: pointer;
+            font-family: $roboto;
+            padding: 14.5px 24px;
+            border: none;
+            background: transparent;
+            font-weight: $fw500;
+            line-height: 18.75px;
+            color: #fff;
+            & img {
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__background-information {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        & p {
+            font-weight: $fw500;
+            color: #fff;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
 }
+
+.main {
+    &__container {
+  
+    }
+}
+
