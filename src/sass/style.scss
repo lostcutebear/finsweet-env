@@ -565,6 +565,52 @@ body {
         gap: 32px;
     }
 }
+
+.blog {
+    padding-bottom: 96px;
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        & p {
+            font-weight: $fw500;
+            font-size: 40px;
+            line-height: 56px;
+            color: $primary-text;
+        }
+
+        & div {
+            border-top: 1px solid #E5E5E5;
+            width: 981px;
+        }
+    }
+
+    &__posts {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__post {
+        & img {
+            margin-bottom: 16px;
+            border-radius: 12px;
+        }
+
+        & p:nth-child(2) {
+            margin-bottom: 8px;
+            font-weight: $fw500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $primary-text;
+        }
+    }
+}
   
 
 
