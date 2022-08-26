@@ -4,7 +4,6 @@
 /* Font and its weights */
 
 $roboto: 'Roboto', sans-serif;
-$fw400: 400;
 $fw500: 500;
 $fw700: 700;
 
@@ -90,9 +89,15 @@ $border: #E5E5E5;
     backdrop-filter: blur(30px);
 }
 
+/* Max-width 1280 */
+
+@mixin max-1280 {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 body { 
     font-family: $roboto;
-    font-weight: $fw400;
 }
 
 .header {
@@ -112,16 +117,17 @@ body {
     }
 
     &__nav {
-        & ul {
-            display: flex;
-            gap: 40px;
-        }
-
         & ul li a {
             font-weight: $fw500;
             line-height: 18.75px;
             color: $secondary-text;
         }
+
+        & ul {
+            display: flex;
+            gap: 40px;
+        }
+
     }
 
     &__background {
@@ -162,6 +168,7 @@ body {
             font-weight: $fw500;
             line-height: 18.75px;
             color: #fff;
+
             & img {
                 margin-right: 8px;
                 vertical-align: middle;
@@ -200,8 +207,8 @@ body {
 
 .about {
     margin-bottom: 64px;
-    &__wrapper{
-        max-width: 1300px;
+    &__wrapper {
+        max-width: 1290px;
         margin: 0 auto;
     }
     
@@ -234,8 +241,6 @@ body {
         & p:nth-child(3) {
             width: 608px;
             margin-bottom: 48px;
-            line-height: 25.6px;
-            color: $secondary-text;
         }
     }
 
@@ -278,7 +283,7 @@ body {
 
     &__bottom-row {
         & p {
-            font-weight: 500;
+            font-weight: $fw500;
             line-height: 19px;
             /* identical to box height */
             letter-spacing: 2px;
@@ -307,11 +312,12 @@ body {
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 96px 110px;
+        padding: 96px 0;
+        @include max-1280;
     }
 
     &__title-wrapper {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         gap: 24px;
         margin-bottom: 32px;
@@ -338,8 +344,6 @@ body {
 
         & p {
             width: 608px;
-            line-height: 25.6px;
-            color: $secondary-text;
         }
     }
 
@@ -379,8 +383,7 @@ body {
 .projects {
     padding-bottom: 96px;
     &__wrapper {
-        max-width: 1300px;
-        margin: 0 auto;
+        @include max-1280;
     }
 
     &__title {
@@ -455,8 +458,7 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 142px 0;
-        max-width: 1280px;
-        margin: 0 auto;
+        @include max-1280;
     }
 
     &__text-row {
@@ -527,8 +529,7 @@ body {
 .cta {
     padding-bottom: 96px;
     &__wrapper {
-        max-width: 1280px;
-        margin: 0 auto;
+        @include max-1280;
         position: relative;
 
         & img {
@@ -563,8 +564,7 @@ body {
 .blog {
     padding-bottom: 96px;
     &__wrapper {
-        max-width: 1280px;
-        margin: 0 auto;
+        @include max-1280;
     }
 
     &__title {
@@ -610,8 +610,7 @@ body {
 .events {
     padding-bottom: 96px;
     &__wrapper {
-        max-width: 1280px;
-        margin: 0 auto;
+        @include max-1280;
     }
 
     &__title {
@@ -725,13 +724,8 @@ body {
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        max-width: 1300px;
-        margin: 0 auto;
+        @include max-1280;
         padding: 96px 0;
-    }
-
-    &__logo {
-  
     }
 
     &__links {

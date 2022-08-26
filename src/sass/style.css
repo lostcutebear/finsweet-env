@@ -115,9 +115,9 @@ a {
           backdrop-filter: blur(30px);
 }
 
+/* Max-width 1280 */
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 
 .header {
@@ -135,14 +135,14 @@ body {
   display: flex;
   gap: 40.5px;
 }
-.header__nav ul {
-  display: flex;
-  gap: 40px;
-}
 .header__nav ul li a {
   font-weight: 500;
   line-height: 18.75px;
   color: #525560;
+}
+.header__nav ul {
+  display: flex;
+  gap: 40px;
 }
 .header__background {
   background: url(../img/background/BG\ Image.jpg) center/cover no-repeat fixed;
@@ -216,7 +216,7 @@ body {
   margin-bottom: 64px;
 }
 .about__wrapper {
-  max-width: 1300px;
+  max-width: 1290px;
   margin: 0 auto;
 }
 .about__top-row {
@@ -244,8 +244,6 @@ body {
 .about__text p:nth-child(3) {
   width: 608px;
   margin-bottom: 48px;
-  line-height: 25.6px;
-  color: #525560;
 }
 .about__title-wrapper {
   display: inline-flex;
@@ -307,10 +305,12 @@ body {
 .activity__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 96px 110px;
+  padding: 96px 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .activity__title-wrapper {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 24px;
   margin-bottom: 32px;
@@ -335,8 +335,6 @@ body {
 }
 .activity__text p {
   width: 608px;
-  line-height: 25.6px;
-  color: #525560;
 }
 .activity__text-wrapper p:first-child {
   margin-bottom: 8px;
@@ -364,7 +362,7 @@ body {
   padding-bottom: 96px;
 }
 .projects__wrapper {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .projects__title h2 {
@@ -652,7 +650,7 @@ body {
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 96px 0;
 }
