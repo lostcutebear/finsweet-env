@@ -223,6 +223,7 @@ body {
   margin-bottom: 64px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 96px;
 }
 .about__text p:nth-child(2) {
@@ -300,8 +301,8 @@ body {
 }
 
 .activity {
+  margin-bottom: 96px;
   background: #EFF7F2;
-  padding-bottom: 96px;
 }
 .activity__wrapper {
   display: flex;
@@ -357,4 +358,64 @@ body {
 }
 .activity__right-content img {
   border-radius: 12px;
+}
+
+.projects {
+  padding-bottom: 96px;
+}
+.projects__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.projects__title h2 {
+  width: 640px;
+  margin-bottom: 65.5px;
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+  color: #1D2130;
+}
+.projects__title-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.projects__title-wrapper p {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: 2px;
+  color: #1D2130;
+}
+.projects__row {
+  display: flex;
+  gap: 24px;
+}
+.projects__row h3 {
+  width: 315px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: #fff;
+}
+.projects__row p {
+  margin-bottom: 64px;
+  width: 315px;
+  line-height: 25.6px;
+  color: #FFFFFF;
+}
+
+.project {
+  position: relative;
+}
+.project img {
+  border-radius: 12px;
+  filter: brightness(50%);
+}
+.project__content-wrapper {
+  position: absolute;
+  top: 85px;
+  left: 48px;
 }/*# sourceMappingURL=style.css.map */
