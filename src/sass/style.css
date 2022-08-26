@@ -418,4 +418,61 @@ body {
   position: absolute;
   top: 85px;
   left: 48px;
+}
+
+.stats {
+  margin-bottom: 96px;
+  background: #0b0706;
+  color: #fff;
+}
+.stats__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 142px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.stats__text-row h2 {
+  width: 611px;
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+}
+.stats__text-row p {
+  margin-bottom: 32px;
+  width: 606px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.stats__stats-row {
+  max-width: 611px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.stats__stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stats__stats div {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+.stats__stats:first-child div {
+  background: #BEF3C0;
+}
+.stats__stats:nth-child(2) div {
+  background: #AC94F1;
+}
+.stats__stats:nth-child(3) div {
+  background: #FFF0CA;
+}
+.stats__stats:nth-child(4) div {
+  background: #F9CF64;
+}
+.stats__stats:last-child div {
+  background: #F38FBF;
 }/*# sourceMappingURL=style.css.map */
