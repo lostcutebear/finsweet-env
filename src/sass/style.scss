@@ -182,12 +182,6 @@ body {
     }
 }
 
-.main {
-    &__container {
-  
-    }
-}
-
 .text-line { 
     width: 72px;
     border-top: 2px solid #1D2130;
@@ -611,7 +605,120 @@ body {
         }
     }
 }
-  
+
+
+.events {
+    padding-bottom: 96px;
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        & p {
+            font-weight: $fw500;
+            font-size: 40px;
+            line-height: 56px;
+            color: $primary-text;
+        }
+
+        & div {
+            border-top: 1px solid #E5E5E5;
+            width: 1062px;
+        }
+    }
+
+    &__event-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    &__event {
+        background: $secondary;
+        padding: 32px 48px 40px 40px;
+        border-radius: 8px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__date {
+        & span {
+            display: block;
+        }
+        & span:first-child {
+            font-weight: $fw500;
+            font-size: $heading2;
+            line-height: 58px;
+            color: $primary-text;
+        }
+
+        & span:last-child {
+            font-weight: $fw500;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $primary-text;
+        }
+    }
+}
+
+.event {
+    &__title {
+        width: 381px;
+        & h3 {
+            font-size: $heading3;
+            font-weight: $fw700;
+            line-height: 42px;
+            color: $primary-text;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        margin-bottom: 8px;
+        & p {
+            font-weight: $fw500;
+            line-height: 18.75px;
+            letter-spacing: 2px;
+            color: $primary-text;
+            text-transform: uppercase;
+        }
+
+        & div {
+            border-top: 2px solid $primary-text;
+            width: 44px;
+        }
+    }
+
+    &__button {
+        & button {
+            cursor: pointer;
+            width: 56px;
+            height: 56px;
+            border: none;
+            background-color: #fff;
+            border-radius: 50%;
+            position: relative;
+            & img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
 
 
 
