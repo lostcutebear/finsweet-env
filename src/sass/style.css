@@ -485,6 +485,7 @@ body {
 }
 .cta__wrapper img {
   filter: brightness(70%);
+  border-radius: 12px;
 }
 .cta__content {
   position: absolute;
