@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "./reset";
+// @import "./normalize";
+/* Font and its weights */
+
+$roboto: 'Roboto', sans-serif;
+$fw500: 500;
+$fw700: 700;
+
+/* Font-sizes */
+
+$homeheading: 64px;
+$heading1: 56px;
+$heading2: 48px;
+$heading3: 28px;
+$heading4: 20px;
+$heading5: 14px;
+$heading6: 12px;
+
+/* Colors */ 
+
+$primary: #70C174;
+$secondary: #BEF3C0;
+$tertiary: #EFF7F2;
+$black: #0b0706;
+$primary-text: #1D2130;
+$secondary-text: #525560;
+$off-white: #EBF0F9;
+$border: #E5E5E5;
+
+/* Paragraphs */ 
+
+.p {
+    width: 290px;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: $secondary-text;
+}
+
+.p-small {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: $secondary-text;
+}
+
+/* Max-width 1280 */
+
+@mixin max-1280 {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $roboto;
+}
+
+.title_what-we-do {
+    margin-bottom: 64px;
+    text-align: center;
+
+    & h2 {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.header {
+    &__container {
+        padding-bottom: 96px;
+    }
+
+    &__what-we-do_text {
+        & h1 {
+            margin-bottom: 34px;
+            width: 461px;
+            font-weight: $fw700;
+            font-size: $heading1;
+            line-height: 67px;
+            color: $primary-text;
+        }
+    }
+    
+    &__what-we-do-wrapper {
+        @include max-1280;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__what-we-do_text {
+        max-width: 690px;
+        flex-grow: 1;
+    }
+
+    &__what-we-do_image {
+        & img {
+            border-radius: 12px;
+        }
+    }
+}
+
+.what {
+    &-we-do {
+        padding: 96px 0 104px 0;
+        margin-bottom: 96px;
+        background: $tertiary;
+    }
+
+    &-we-do__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        & h2 {
+            margin-bottom: 64px;
+            font-weight: $fw700;
+            font-size: 48px;
+            line-height: 120%;
+            color: $primary-text;
+        }
+    }
+
+    &-we-do__features {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 48px;
+    }
+
+    &-we-do__feature {
+        display: flex;
+        gap: 24px;
+    }
+
+    &-we-do__feature_text {
+        & p:first-child {
+            margin-bottom: 8px;
+            font-weight: $fw700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $primary-text;
+        }
+
+        & p:last-child {
+            width: 332px;
+        }
+    }
+}
