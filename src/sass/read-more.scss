@@ -1,0 +1,147 @@
+$fw500: 500;
+$fw700: 700;
+
+/* Font-sizes */
+
+$homeheading: 64px;
+$heading1: 56px;
+$heading2: 48px;
+$heading3: 28px;
+$heading4: 20px;
+$heading5: 14px;
+$heading6: 12px;
+
+/* Colors */ 
+
+$primary: #70C174;
+$secondary: #BEF3C0;
+$tertiary: #EFF7F2;
+$black: #0b0706;
+$primary-text: #1D2130;
+$secondary-text: #525560;
+$off-white: #EBF0F9;
+$border: #E5E5E5;
+
+/* Paragraphs */ 
+
+.p {
+    font-size: 16px;
+    line-height: 25.6px;
+    color: $secondary-text;
+}
+
+.p-small {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: $secondary-text;
+}
+
+/* Active Link */ 
+
+.active {
+    color: $black!important;
+}
+
+/* Max-width 1280 */
+
+@mixin max-1280 {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.post {
+    padding-bottom: 96px;
+    &__wrapper {
+        max-width: 928px;
+        margin: 0 auto;
+    }
+
+    &__section_upper {
+        padding-bottom: 48px;
+        & h1 {
+            margin-bottom: 32px;
+            font-weight: $fw700;
+            font-size: $heading1;
+            line-height: 67px;
+            color: $primary-text;
+        }
+
+        & img {
+            border-radius: 12px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+    }
+
+    
+
+    &__section_lower {
+        & h2 {
+            margin-bottom: 16px;
+            font-weight: $fw700;
+            font-size: $heading2;
+            line-height: 58px;
+            color: $primary-text;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        margin-bottom: 16px;
+
+        & ul {
+            list-style: disc;
+
+            & li {
+                list-style-position: inside;
+
+                & p {
+                    display: inline-block;
+                    font-weight: $fw700;
+                    line-height: 26px;
+                    color: $primary-text;
+                }
+            }
+        }
+    }
+}
+
+.features {
+    background: $off-white;
+    margin-bottom: 96px;
+
+    &__wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 48px;
+        padding: 96px 0;
+    }
+
+    &__feature {
+        display: flex;
+        gap: 20px;
+        width: 488px;
+    }
+
+    &__feature_icon {
+  
+    }
+
+    &__feature_text {
+        & p:first-child {
+            font-weight: $fw700;
+            font-size: 24px;
+            line-height: 38px;
+            color: $primary-text;
+        }
+    }
+}
+
